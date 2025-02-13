@@ -1,0 +1,102 @@
+.container{
+   
+    width: 100%;
+    margin-top: 8rem;
+}
+.container > h1{
+    padding-left: 2rem;
+}
+.cards{
+    width: 100%;
+   
+}
+.card{
+    width: 30%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.container h1{
+    margin: 40px  0 ;
+}
+.container h1{
+    font-weight: 100;
+    font-size: 2.7rem;
+}
+.card > .con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50% ,-50%);
+}
+.card > img{
+    width: 100%;
+    border-radius: 1px;
+   border: none;
+   outline: none;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card > .con > p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(53, 52, 53);
+    text-align: center;
+   
+}
+.card2 > .con > .btn-h{
+    margin-top: 3rem;
+}
+.con > .btn-h:hover{
+    transition: 0.5 ease;
+    background: rgb(40, 2, 78);
+    color:white;
+    cursor: pointer;
+}
+
+ .card3 > .con > p {
+    font-size: 1.6rem;
+}
+.con > .btn-h{
+    padding: 12px;
+    background: rgb(240, 181, 240);
+    border: none;
+    outline: none;
+    text-align: center;
+   
+}
+.btn-h > h2{
+  font-size: 2rem;
+}
+.con > .btn-k{
+    padding: 12px;
+    background: rgb(240, 181, 240);
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 ,0.24);
+    cursor: pointer;
+}
+@media screen and (max-width: 812px) {
+    .card{
+        width: 90%;
+    }
+    .container > h1{
+   font-size: 2.6rem;
+   
+    }
+
+}
+@media screen and (max-width:412px) {
+    .container > h1{
+        font-size: 2.4rem;
+        
+         }
+}

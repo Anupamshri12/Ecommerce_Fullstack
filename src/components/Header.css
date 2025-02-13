@@ -1,0 +1,380 @@
+html{
+    position: relative;
+}
+.mai-wal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9rem 9rem;
+    width: 100%;
+    
+}
+.sum-hu{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    
+}
+.btn{
+    margin-top: 1rem;
+    background-color: rgb(204, 165, 243);
+    color: rgb(28, 28, 28);
+    border:none;
+    font-size: .9rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.out:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rebeccapurple;
+}
+.hu-wal{
+    border: 1px solid rgb(244, 240, 248);
+    line-height: 3;
+    background-color: rgb(240, 229, 245);
+    padding: 5px 12px;
+    border-radius: 16px;
+    overflow-x: hidden;
+    font-size: .9rem;
+    width: 40%;
+}
+.btn-wal{
+    padding: 0.25rem 1rem;
+    background-color: rebeccapurple;
+    border: none;
+    outline: none;
+    font-weight: bold;
+
+    color: white;
+}
+.namaste{
+    margin-top: 2rem;
+}
+.span-wal{
+    background-color: rgb(240, 229, 245);
+    
+  
+}
+.hu-wal > p{
+  background-color: rgb(234, 215, 252);
+  border: 1px solid rgb(244, 236, 251);
+  border-radius: 10px;
+  margin-bottom: .5rem;
+  padding-left: .2rem;
+}
+.sum-hu > h2{
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+.sum-hu > h3{
+    font-weight: 500;
+}
+.sum-hu > h4{
+    font-weight: 500;
+}
+.sum-hu > h3 > .sp1{
+    margin-left: 20rem;
+
+}
+.sum-hu > h4 > .sp2{
+    margin-left: 20rem;
+}
+.sum-hu{
+    width: 40%;
+    background-color: rgb(245, 214, 254);
+   
+    border: 1px solid rgb(210, 180, 239);
+    border-radius: 12px;
+    padding: 0 6px;
+}
+#helo{
+    height: 36vh;
+}
+.out{
+    
+background-color: rebeccapurple;
+    width: 90%;
+    color: white;
+    outline: none;
+    border: none;
+    margin-left: 1rem;
+    padding:.5rem;
+    margin-top: .2rem;
+    border: 1px solid rebeccapurple;
+   border-radius: 6px;
+}
+@media only screen and (max-width:1660px){
+    .mai-wal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9rem 9rem;
+        width: 100%;
+    }
+    .hu-wal{
+        border: 1px solid rgb(244, 240, 248);
+        line-height: 3;
+        background-color: rgb(240, 229, 245);
+        padding: 5px 12px;
+        border-radius: 16px;
+        overflow-x: hidden;
+        font-size: 1rem;
+        width: 60%;
+        margin-right: 4rem;
+    }
+    .btn-wal{
+        padding: 0.25rem 1rem;
+        background-color: rebeccapurple;
+        border: none;
+        outline: none;
+        font-weight: bold;
+    
+        color: white;
+    }
+    
+    .span-wal{
+        background-color: rgb(240, 229, 245);
+        
+        padding: 0rem 1.2rem;
+        padding-bottom: .2rem;
+    }
+    .hu-wal > p{
+      background-color: rgb(234, 215, 252);
+      border: 1px solid rgb(244, 236, 251);
+      border-radius: 10px;
+      margin-bottom: .5rem;
+      padding-left: .2rem;
+    }
+    .sum-hu > h2{
+        margin-bottom: 7rem;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+    .sum-hu > h3{
+        font-weight: 500;
+    }
+    .sum-hu > h4{
+        font-weight: 500;
+    }
+    .sum-hu > h3 > .sp1{
+        margin-left: 13rem;
+    
+    }
+    .sum-hu > h4 > .sp2{
+        margin-left: 15rem;
+    }
+    .sum-hu{
+        width: 30%;
+        background-color: rgb(245, 214, 254);
+        height: 33vh;
+        border: 1px solid rgb(210, 180, 239);
+        border-radius: 12px;
+        padding: 0 6px;
+    }
+    .out{
+        
+    background-color: rebeccapurple;
+        width: 90%;
+        color: white;
+        outline: none;
+        border: none;
+        margin-left: 1rem;
+        padding:.5rem;
+        margin-top: 1rem;
+        border: 1px solid rebeccapurple;
+       border-radius: 7px;
+    }
+}
+@media only screen and (max-width:1280px ){
+    .sum-hu{
+        position: relative;
+        top: 50%;
+        right: 0%;
+        
+    }
+    .mai-wal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 9rem .2rem;
+        width: 100%;
+       
+    }
+    .hu-wal{
+        border: 1px solid rgb(244, 240, 248);
+       line-height: 2;
+        background-color: rgb(240, 229, 245);
+        padding: 5px 12px;
+        border-radius: 16px;
+       font-size: 1rem;
+        width: 95%;
+        margin: auto;
+    }
+    .sum-hu > h2{
+        margin-bottom: 7rem;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+    .sum-hu > h3{
+        font-weight: 500;
+    }
+    .sum-hu > h4{
+        font-weight: 500;
+    }
+    .sum-hu > h3 > .sp1{
+        margin-left: 13rem;
+    
+    }
+    .sum-hu > h4 > .sp2{
+        margin-left: 14rem;
+    }
+    .sum-hu{
+        width: 90%;
+        background-color: rgb(245, 214, 254);
+        height: 33vh;
+        border: 1px solid rgb(210, 180, 239);
+        border-radius: 12px;
+        padding: 0 6px;
+        margin-top: 3rem;
+    }
+    .btn-wal{
+        padding: 0rem .7rem;
+        background-color: rebeccapurple;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        color: white;
+    }
+    .out{
+        
+        background-color: rebeccapurple;
+            width: 90%;
+            color: white;
+            outline: none;
+            border: none;
+            margin-left: 1rem;
+            padding:.5rem;
+            margin-top: 1rem;
+            border: 1px solid rebeccapurple;
+           border-radius: 7px;
+        }
+}
+
+@media only screen and (max-width:812px) {
+    .mai-wal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 9rem .2rem;
+        width: 100%;
+       
+    }
+    .namaste > span{
+        font-size: .8rem;
+    }
+    .hu-wal{
+        border: 1px solid rgb(244, 240, 248);
+       line-height: 2;
+        background-color: rgb(240, 229, 245);
+        padding: 5px 12px;
+        border-radius: 16px;
+       font-size: .6rem;
+        width: 100%;
+        margin: auto;
+    }
+    .hu-wal > p {
+        font-size: 1.3rem;
+    }
+    .sum-hu > h2{
+        margin-bottom: 7rem;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+    .sum-hu > h3{
+        font-weight: 500;
+    }
+    .sum-hu > h4{
+        font-weight: 500;
+    }
+    .sum-hu > h3 > .sp1{
+        margin-left: 13rem;
+    
+    }
+    .sum-hu > h4 > .sp2{
+        margin-left: 14rem;
+    }
+    .sum-hu{
+        width: 90%;
+        background-color: rgb(245, 214, 254);
+        height: 33vh;
+        border: 1px solid rgb(210, 180, 239);
+        border-radius: 12px;
+        padding: 0 6px;
+        margin-top: 3rem;
+    }
+    .hai-kya > div{
+        font-size: 1rem;
+    }
+    .btn-wal{
+        padding: 0rem .7rem;
+        background-color: rebeccapurple;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        color: white;
+    }
+    .out{
+        
+        background-color: rebeccapurple;
+            width: 90%;
+            color: white;
+            outline: none;
+            border: none;
+            margin-left: 1rem;
+            padding:.5rem;
+            margin-top: 1rem;
+            border: 1px solid rebeccapurple;
+           border-radius: 7px;
+        }
+        .btn{
+            margin-top: 1rem;
+            background-color: rgb(204, 165, 243);
+            color: rgb(37, 36, 36);
+            border:none;
+            font-size: .9rem;
+            border: 1px solid black;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .span-wal{
+            padding: 0 0.3rem 0 .3rem;
+        }
+       
+        .sum-hu{
+            position: relative;
+            top: 50%;
+            right: 0%;
+            
+        }
+}
+@media screen and (max-width:412px) {
+    .sum-hu > h3{
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    .sum-hu > h4{
+        width: 100%;
+        font-size: .8rem;
+    }
+    
+}
+

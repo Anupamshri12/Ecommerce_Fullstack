@@ -1,0 +1,26 @@
+.first-section{
+    width: 80%;
+    padding: 150px 0 0 80px;
+}
+.first-section > .first3{
+    display: flex;
+    justify-content: space-between;
+}
+.first-section > .first1 > h4{
+    font-size: 1.5rem;
+}
+.first-section > .first2 > h2{
+    font-size: 3.5rem;
+}
+.first-section > .first3 > h4{
+    font-size: 2rem;
+}
+.first-section > .first3 > .first3-button{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: rgb(141, 80, 199);;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}

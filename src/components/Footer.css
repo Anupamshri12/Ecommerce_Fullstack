@@ -1,0 +1,167 @@
+.foot-hu{
+  background-color:rgb(32 4 61);
+  color: white;  
+  height: 51vh;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 30px 60px ;
+} 
+
+.part-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    line-height: 2.4;
+   
+ 
+}
+.about  .sign-kar .help-kar .shop-kar > h3 {
+    font-size: 1.3rem;
+}
+.about  .sign-kar .help-kar  .shop-kar> p{
+    font-size: .9rem;
+}
+.low-hu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+}
+.acha-hu{
+    margin-top: 1rem;
+    width: 100%;
+}
+.acha-hu > h3{
+    font-weight: 600;
+}
+.acha-hu > h3 > span > .in-wal{
+    padding: .4rem;
+    border: 1px solid rgb(236, 221, 221);
+   
+}
+.icons-wal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#h-hu{
+    font-size: 1.5rem;
+}
+.acha-hu > h3 > span > button{
+    padding: .35rem;
+    border: 1px solid white;
+    background-color:rgb(177, 153, 201);
+    color: white;
+}
+.copy-hu{
+    text-align: center;
+    margin-top: 1.7rem;
+    line-height: 1.5;
+}
+@media only screen and (max-width:962px){
+    .acha-hu > h3 > span > .in-wal{
+        padding: .1rem;
+        border: 1px solid rgb(236, 221, 221);
+       
+    }
+    .part-one{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+    
+   
+  }
+    .acha-hu > h3 > span > button{
+        padding: .1rem;
+        border: 1px solid white;
+        background-color:rgb(177, 153, 201);
+        color: white;
+    }
+      #h-hu{
+        font-size: .9rem;
+    }
+}
+@media only screen and (max-width:812px){
+    #h-hu > li{
+        padding-left: 1rem;
+    }
+    .foot-hu{
+        
+        height:auto;
+        width: 100%;
+       
+       
+      }
+      .part-one{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+        width: 100%;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+        
+    }
+    .about{
+        margin: 0rem 1.4rem;
+    }
+    .sign-kar{
+        margin: 0rem 1.4rem;
+    }
+    .shop-kar{
+        margin: 0rem 1.4rem;
+    }
+    .help-kar{
+        margin: 0rem 1.4rem;
+    }
+  .about > h3{
+    font-size: .9rem;
+    margin-bottom: .7rem;
+  }
+  .sign-kar > h3{
+    font-size: .9rem;
+    margin-bottom: .7rem;
+  }
+  .shop-kar > h3{
+    font-size: .9rem;
+    margin-bottom: .7rem;
+  }
+  .help-kar> h3{
+    font-size: .9rem;
+    margin-bottom: .7rem;
+  }
+  .about > p{
+    font-size: .8rem;
+  }
+  .help-kar > p {
+    font-size: .8rem;
+  }
+  .sign-kar >  p{
+    font-size: .8rem;
+  }
+  .shop-kar > p{
+    font-size: .8rem;
+  }
+  .acha-hu > h3{
+    font-size: 1rem;
+  
+  }
+  .acha-hu > h3 > span > .in-wal{
+    padding: 0 .1rem;
+  }
+  .acha-hu > h3 > span > button{
+    border: 1px solid rgb(248, 246, 250);
+  }
+ .low-hu{
+    width: 100%;
+
+ }
+.low-hu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}

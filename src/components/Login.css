@@ -1,0 +1,133 @@
+.signup{
+	width: 100%;
+	
+	padding: 10rem;
+	background-color: rgb(242, 240, 244);
+		height: 100vh;
+}
+.first > p{
+	margin-top: 2rem;
+}
+.first{
+	width: 50%;
+
+	text-align: center;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	
+	padding: 3rem;
+	margin-top: 3rem;
+}
+.first > h2{
+	font-weight: 400;
+}
+.first > .kya-hu{
+	width: 60%;
+	height: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	border: 1px solid black;
+}
+.first > .btnhuma{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	background-color: rgb(131, 83, 179);
+	border: rebeccapurple;
+	padding: .4rem;
+	font-size: .9rem;
+	color: black;
+}
+.first > .btnhuma:hover{
+	cursor: pointer;
+	background-color: rgb(204, 185, 222);
+}
+@media screen and (max-width:1278px) {
+	.signup{
+		width: 100%;
+		padding-bottom: 3rem;
+		padding-top: 12rem;
+		padding-left: 0;
+		padding-right: 0;
+	
+		background-color: rgb(242, 240, 244);
+		height: 100vh;
+	}
+	.first{
+		width: 50%;
+	
+		text-align: center;
+		
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+		
+		
+	}
+	.first > .kya-hu{
+		width: 100%;
+		height: 4vh;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		border: none;
+		outline: none;
+	}
+	.first > .btnhuma{
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		background-color: rgb(131, 83, 179);
+		border: rebeccapurple;
+		padding: .4rem;
+		font-size: .9rem;
+		color: black;
+	}
+}
+@media screen and (max-width:660px){
+	.signup{
+		width: 100%;
+		padding-bottom: 3rem;
+		padding-top: 15rem;
+		padding-left: 0;
+		padding-right: 0;
+	
+		background-color: rgb(242, 240, 244);
+		height: 100vh;
+	}
+	.first{
+		width: 100%;
+	
+		text-align: center;
+		
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+		
+		
+	}
+	.first > .kya-hu{
+		width: 100%;
+		height: 4vh;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		border: none;
+		outline: none;
+	}
+	.first > .btnhuma{
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1rem;
+		background-color: rgb(131, 83, 179);
+		border: rebeccapurple;
+		padding: .4rem;
+		font-size: .9rem;
+		color: black;
+	}
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(243 239 247);
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 ,0.4);
+    padding: 20px 20px;
+  position: fixed;
+  z-index: 1;
+  
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.sup{
+    font-size: .8rem;
+   color: rgb(255, 255, 255);
+   margin-left: .01rem;
+   font-weight: bold;
+   background-color: rgb(154, 101, 206);
+   padding: .2rem .4rem 0.2rem .4rem;
+   border-radius: 270px;
+   
+}
+ li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+}
+a{
+    color: rebeccapurple;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.po:hover{
+ cursor: pointer;
+}
+nav > .left-hu > h4{
+    font-size: 1.6rem;
+}
+.mobile{
+    display: none;
+}
+.input-me{
+   width: 300px;
+   height: 40px;
+   padding-left: .8rem;
+    border-radius: 20px;
+    border:2px solid rgb(210, 189, 234);
+}
+a:hover{
+  color: rgb(44, 5, 81);
+  transition: 0.3 ease;
+}
+.alert-hu{
+    background-color: white;
+    color: black;
+   
+}
+@media screen and (max-width:1048px) {
+    .mobile{
+        display: initial;
+    }
+    #navbar{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        position: fixed;
+        top: 88px;
+        right: -1060px;
+        width: 100%;
+        background:  rgb(243 239 247);
+        height: 100vh;
+        transition: 1s ease-in;
+        z-index: 1;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    .input-me{
+        width: 90%;
+       
+      text-align: start;
+      margin-top: 10px;
+    }
+    
+    li{
+        
+        padding: 10px 0px;
+      margin-bottom: 17px;
+    }
+   .nav-links:hover{
+    background-color: aliceblue;
+    width: 100%;
+   
+    text-align: center;
+   }
+     a{
+        font-size:1.4rem ;
+        color: rgb(153, 102, 179);
+        font-weight: 800;
+    }
+
+    .input-me:hover{
+        border: 1px solid rebeccapurple;
+        cursor: pointer;
+        outline: none;
+    }
+   
+}
+.input-me:hover{
+    border: 1px solid rebeccapurple;
+    cursor: pointer;
+    outline: none;
+}
+.input-me{
+    padding:1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: rgb(231, 215, 247);
+}

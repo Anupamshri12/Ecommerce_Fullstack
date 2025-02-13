@@ -1,0 +1,119 @@
+.flex-hu{
+    display: flex;
+  
+padding: 1rem;
+flex-wrap: wrap;
+justify-content: space-between;
+    align-items: center;
+}
+.flex-hu > .stylese:hover{
+    box-shadow: 0 0 3px rgba(0 , 0 , 0 ,0.1);
+    cursor: pointer;
+}
+.part-sa{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.start-hu > button > .fa-star{
+   color: gold;
+
+}
+.start-hu > button{
+    padding: 8px;
+    font-weight: 600;
+    border: 1px solid rgb(70, 69, 67);
+    border-radius: 5px;
+    border: none;
+    margin-right: .5rem;
+}
+.start-hu > span  > .fa-heart{
+    color: rgb(255, 183, 183);
+    font-size: 1.1rem;
+}
+.stylese{
+    
+    width: 25%;
+    padding: 0rem .5rem;
+    margin: .3rem .00001rem ;
+    border: 1px solid rgb(250, 246, 254);
+    background-color: rgb(255, 251, 251);
+    line-height: 1.4;
+}
+.starter{
+  
+    padding-left: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.cart-wala{
+    padding: .3rem;
+    background-color: rgb(230, 219, 241);
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    font-weight: 500;
+    color: rgb(71, 6, 136);
+
+}
+.cart-wala:hover{
+    cursor: pointer;
+   color: white;
+   background-color: rebeccapurple;
+}
+
+.starter>h2{
+    font-size: 1rem;
+    color: grey;
+}
+.starter>p{
+    font-size: 1.6rem;
+
+    
+}
+
+@media screen and (max-width: 812px) {
+    .flex-hu{
+        display: flex;
+        margin: 1rem 0 0 0 ;
+       flex-wrap: wrap;
+        
+        padding: 10px 6px;
+        
+    }
+    .stylese{
+        width: 50%;
+    }
+    .starter{
+        margin: 13rem 0 0 0 ;
+        padding-left: 1rem;
+      line-height: 1.2;
+    }
+    .starter>h2{
+        font-size: 1rem;
+        color: grey;
+    }
+    .starter>p{
+        font-size: 1.6rem;
+    
+        
+    }
+    .start-hu > button{
+        padding: 5px;
+        font-weight: 600;
+        border: 1px solid rgb(70, 69, 67);
+        border-radius: 5px;
+        border: none;
+        margin-right: .2rem;
+        
+    }
+    .start-hu{
+        width: 50%;
+    }
+    .start-hu > span  > .fa-heart{
+        color: rgb(255, 183, 183);
+        font-size: 1rem;
+    }
+}
