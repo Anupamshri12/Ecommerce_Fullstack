@@ -41,11 +41,11 @@ public class CustomMiddleware
         {
             context.Response.StatusCode = 403;
         }
-        var result = JsonSerializer.Serialize(new
-        {
+        var newobject = new {
             code = e.ErrorCode,
             message = e.Message
-        });
+        };
+        var result= JsonSerializer.Serialize(newobject);
         return context.Response.WriteAsync(result);
     }
     public Task HandleException(HttpContext context, Exception e)
