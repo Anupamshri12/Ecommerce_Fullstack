@@ -50,7 +50,7 @@ public class CustomMiddleware
     }
     public Task HandleException(HttpContext context, Exception e)
     {
-        context.Response.StatusCode = 400;
+        context.Response.StatusCode = 420;
         context.Response.ContentType = "application/json";
         var result = JsonSerializer.Serialize(new{
             errorcode = context.Response.StatusCode,
