@@ -5,8 +5,11 @@ using Microsoft.EntityFrameworkCore;
 using MySqlConnector;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using WebApplication1.CustomDBContenxt;
 using WebApplication1.Data.Entities;
+using WebApplication1.Middleware;
 
 
 namespace WebApplication1.Controllers
@@ -20,9 +23,69 @@ namespace WebApplication1.Controllers
 
     {
         public readonly DbContextdetail _dbcontextdetail;
-        public PostLoginController(DbContextdetail dbcontextdetail)
+        public readonly IConfiguration _configuration;
+        public static string value = "";
+        public PostLoginController(DbContextdetail dbcontextdetail ,IConfiguration configuration)
         {
+            _configuration = configuration;
             _dbcontextdetail = dbcontextdetail;
+        }
+        [HttpPost]
+        [Route("emailsender")]
+        public IActionResult Emailsender(EmailDto dto){
+            var smtpSettings = _configuration.GetSection("SmtpSettings");
+
+        string host = smtpSettings["Host"];
+        int port = int.Parse(smtpSettings["Port"]);
+        bool enableSsl = bool.Parse(smtpSettings["EnableSsl"]);
+        string username = smtpSettings["Username"];
+        string password = smtpSettings["Password"];
+        string recipientEmail = smtpSettings["RecipientEmail"];
+
+          
+        try
+        {
+            
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress(username);
+            mail.To.Add(dto.email);
+            mail.Subject = "OTP Request";
+            string ans = "";
+            for(int i = 0; i < 4;i++){
+               Random random = new Random();
+               int k = random.Next(0 ,9);
+               ans += k.ToString();
+            }
+            mail.Body = $"Dear User, OTP for confirming your order : {ans}. Please do not share with anyone.";
+
+            SmtpClient smtp = new SmtpClient(host, port)
+            {
+                Credentials = new NetworkCredential(username, password),
+                EnableSsl = enableSsl
+            };
+            value = ans;
+
+            smtp.Send(mail);
+
+            return Ok("OTP sent");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Email sending failed: {ex.Message}");
+        }
+            
+        }
+        [HttpPost]
+        [Route("checkotp")]
+        public object Checkotp(OtpDto dto){
+            if(dto == null){
+                throw new CustomException(ErrorCode.ValidationFailed ,"Enter OTP");
+            }
+            if(dto.otp != value){
+               throw new CustomException(ErrorCode.ValidationFailed ,"Validation Failed");
+            }
+            return Ok("Validated");
+            
         }
         [HttpGet]
         [Route("protected")]

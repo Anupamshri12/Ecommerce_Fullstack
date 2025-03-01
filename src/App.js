@@ -10,10 +10,13 @@ import Login from './components/Login';
 import Protected from './components/Protected';
 import Signup from './components/Signup';
 import Brands from './components/Brands';
+import { Toaster } from "react-hot-toast";
+
 function App() {
   
   return (
  <>
+ <Toaster/>
  <Router>
 <Navbar />
 
@@ -25,6 +28,7 @@ function App() {
   <Route path = "/DESCRIBE-details/:id" element = {<DESCRIBE/>}></Route>
   <Route path = "/signin" element = {<Login/>}></Route>
   <Route path = "/signup" element = {<Signup/>}></Route>
+  
  
 </Routes>
 

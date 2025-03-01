@@ -7,10 +7,19 @@ import { useDispatch } from 'react-redux';
 import { remove_user } from '../feautres/Slice';
 import { decrease_cart } from '../feautres/Slice';
 import { increase_cart } from '../feautres/Slice';
+import { useNavigate } from 'react-router-dom';
+import CheckoutPage from './CheckoutPage';
+import Modal from './Modal';
 export default function Header() {
+  const navigate = useNavigate();
+  const[view ,setview] = useState(false);
   const {cart ,Totalquantity ,Totalprice} = useSelector((state)=>{
     return state.carts;
   });
+  const handlecheckout = ()=>{
+
+     setview(true)
+  }
  const dispatch = useDispatch();
  useEffect(()=>{
   dispatch(gettotalcart())
@@ -61,7 +70,13 @@ export default function Header() {
       
       <h3>Totalquantity: <span className="sp1">{Totalquantity}</span></h3>
       <h4>Totalprice:   <span className="sp2">{Totalprice}</span> </h4>
-      <button className="out">CHECKOUT NOW</button>
+      <button className="out" onClick={handlecheckout}>CHECKOUT NOW</button>
+      {
+        
+        view == true?
+        <Modal onClose={()=>setview(false)}><CheckoutPage></CheckoutPage></Modal>:null
+      
+      }
     </div>
    
     </div>

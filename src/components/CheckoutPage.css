@@ -1,0 +1,44 @@
+.checkout{
+  padding: 1rem 1rem 0 1rem;
+}
+.place-order{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.place-order > .first-name{
+  border: none;
+  padding: .8rem 0 .8rem 0;
+  margin-top: 1rem;
+  
+}
+#place-button{
+  background-color: rgb(184, 107, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgb(184, 107, 255);
+  width: 60%;
+}
+#place-button:hover{
+  background-color: white;
+}
+#otp-button:hover{
+  background-color: white;
+
+}
+.new-sender{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.new-sender > #otp-button{
+  background-color: rgb(184, 107, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: .5rem;
+  border: 1px solid rgb(184, 107, 255);
+  width: 20%;
+  
+}

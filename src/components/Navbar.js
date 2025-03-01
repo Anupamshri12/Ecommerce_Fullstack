@@ -17,7 +17,7 @@ export default function Navbar({length}) {
     const gettoken = localStorage.getItem("authtoken");
     if(!gettoken){alert("Sign in to continue");}
     else{
-    const response = await fetch("https://localhost:7153/api/PostLogin/protected" ,{
+    const response = await fetch("http://localhost:5063/api/PostLogin/protected" ,{
       method:"GET",
       headers:{
         "Content-Type":"application/json",

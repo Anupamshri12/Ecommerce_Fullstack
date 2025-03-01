@@ -26,7 +26,7 @@ const signin = async()=>{
     password
   };
    try{
-    const response = await fetch("https://localhost:7153/api/PreLogin/Login" ,{
+    const response = await fetch("http://localhost:5063/api/PreLogin/Login" ,{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
